@@ -1,0 +1,79 @@
+button {
+    cursor: pointer;
+}
+
+.board {
+    margin: 1rem;
+    display: inline-block;
+}
+
+.square {
+    width: 2rem;
+    height: 2rem;
+    border-radius: .25rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.x {
+    background-color: #fecc00;
+}
+
+.o {
+    background-color: #006aa7;
+}
+
+.status {
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.board, .status {
+    box-shadow: 0 0 10px #aaa;
+}
+
+.winner {
+    opacity: 1 !important;
+}
+
+div.winner {
+    background-color: greenyellow;
+}
+
+div.draw {
+    background-color: lemonchiffon;
+}
+
+.x, .o {
+    cursor: not-allowed;
+}
+
+.game-over .square {
+    opacity: 0.4;
+}
+
+.new-game, .hidden {
+    display: none;
+}
+
+.winner .new-game, .draw .new-game {
+    display: inherit;
+}
+
+.history {
+    display: inline-block;
+    position: absolute;
+    list-style: none;
+}
+
+.history li button {
+    width: 100%;
+}
+
+.game-state * {
+    margin: .25rem;
+}
+
+li.playback button {
+    font-weight: bold;
+}
